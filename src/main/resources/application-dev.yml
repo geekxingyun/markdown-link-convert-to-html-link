@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  datasource:
+    username: sa
+    password: sa
+    url: jdbc:h2:mem:in_memory_shopping_db;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+  jpa:
+    database: h2
+    show-sql: true
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy

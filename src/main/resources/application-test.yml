@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  datasource:
+    username: root
+    password: toor
+    url: jdbc:mysql://localhost:3306/markdown_link_to_html_link_db?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
